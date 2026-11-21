@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | The Medali School</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="medali-school-logo.jpg" type="image/x-icon" />
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-xl bg-[#0f3d3e] flex items-center justify-center text-amber-400 overflow-hidden">
+            <img src="medali-school-logo.jpg" alt="The Medali School Logo" class="w-full h-full object-cover" />
+          </div>
+          <div>
+            <span class="block text-xl font-extrabold text-[#0f3d3e] leading-none">THE MEDALI SCHOOL</span>
+            <span class="block text-[11px] font-semibold text-amber-600 uppercase tracking-widest mt-1">Aspire and strive to achieve</span>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-700">
+          <a href="index.html" class="nav-link hover:text-amber-600">Home</a>
+          <a href="about.html" class="nav-link hover:text-amber-600">About Us</a>
+          <a href="academics.html" class="nav-link hover:text-amber-600">Academics</a>
+          <a href="gallery.html" class="nav-link hover:text-amber-600">Campus Life</a>
+          <a href="contact.html" class="nav-link hover:text-amber-600">Contact</a>
+          <a href="admissions.html" class="bg-amber-600 hover:bg-amber-700 text-white px-5 py-2.5 rounded-lg font-semibold">Apply Now</a>
+        </nav>
+        <button id="mobile-menu-btn" class="md:hidden text-slate-700"><i class="fa-solid fa-bars text-2xl"></i></button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-4 pt-3 pb-5 space-y-2">
+      <a href="index.html" class="block py-2">Home</a>
+      <a href="about.html" class="block py-2">About Us</a>
+      <a href="academics.html" class="block py-2">Academics</a>
+      <a href="gallery.html" class="block py-2">Campus Life</a>
+      <a href="contact.html" class="block py-2 font-bold text-amber-600">Contact</a>
+      <a href="admissions.html" class="block mt-2 text-center bg-amber-600 text-white py-2.5 rounded-lg font-semibold">Apply Now</a>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="bg-[#0f3d3e] text-white py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <p class="text-amber-400 text-xs font-bold uppercase tracking-widest mb-2">Get in Touch</p>
+      <h1 class="text-4xl font-bold">Contact The Medali School</h1>
+      <p class="text-slate-200 mt-3 max-w-2xl">Have a question about admissions, fee structures, or school transport? Reach out to our administration team.</p>
+    </div>
+  </section>
+
+  <!-- Contact Cards & Message Form -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12">
+      
+      <!-- Contact Info -->
+      <div class="lg:col-span-5 space-y-6">
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex items-start gap-4">
+          <div class="w-11 h-11 rounded-xl bg-[#0f3d3e] text-amber-400 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-[#0f3d3e]">Academy Location</h3>
+            <p class="text-sm text-slate-600 mt-1">Mihango, Nairobi, Kenya</p>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex items-start gap-4">
+          <div class="w-11 h-11 rounded-xl bg-[#0f3d3e] text-amber-400 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-[#0f3d3e]">Phone & WhatsApp</h3>
+            <p class="text-sm text-slate-600 mt-1">+254793 766133</p>
+            <p class="text-xs text-slate-500 mt-0.5">Available Mon – Fri, 7:30 AM – 5:00 PM</p>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex items-start gap-4">
+          <div class="w-11 h-11 rounded-xl bg-[#0f3d3e] text-amber-400 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-[#0f3d3e]">Email & Social Media</h3>
+            <p class="text-sm text-slate-600 mt-1">themedalischool@gmail.com</p>
+            <a href="https://www.facebook.com/p/The-Medali-School-100089472521052/" target="_blank" rel="noopener" class="inline-block text-xs font-semibold text-amber-600 hover:underline mt-1">
+              Message us via Facebook &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="lg:col-span-7">
+        <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100">
+          <h2 class="text-2xl font-bold text-[#0f3d3e] mb-2">Send Us a Message</h2>
+          <p class="text-sm text-slate-600 mb-6">We aim to respond to all parent and community inquiries within one working day.</p>
+
+          <div id="contact-alert" class="hidden mb-6 bg-emerald-50 border border-emerald-200 text-emerald-800 px-4 py-3 rounded-lg text-sm">
+            <i class="fa-solid fa-circle-check mr-2"></i>Message sent! Thank you for contacting The Medali School.
+          </div>
+
+          <div id="contact-error" class="hidden mb-6 bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg text-sm">
+            <i class="fa-solid fa-circle-exclamation mr-2"></i>Oops! Something went wrong while sending your message. Please try again or call us directly.
+          </div>
+
+          <form id="contact-form" method="POST" action="https://formspree.io/f/xyewngkn" class="space-y-5">
+            <input type="hidden" name="_subject" value="New Contact Inquiry - The Medali School" />
+            <input type="text" name="_gotcha" class="hidden" />
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5">Your Name *</label>
+                <input type="text" name="name" required placeholder="Full Name" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#0f3d3e]" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5">Phone Number *</label>
+                <input type="tel" name="phone" required placeholder="+254 7XX XXX XXX" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#0f3d3e]" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5">Subject *</label>
+              <input type="text" name="subject" required placeholder="e.g. Fee Structure Inquiry / Book Campus Tour" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#0f3d3e]" />
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5">Message *</label>
+              <textarea name="message" rows="4" required placeholder="How can we help you?" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#0f3d3e]"></textarea>
+            </div>
+
+            <button type="submit" id="contact-submit-btn" class="bg-[#0f3d3e] hover:bg-[#092627] text-white font-bold px-8 py-3 rounded-lg transition shadow">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Google Map Embed -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-14">
+      <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-sm h-80 bg-slate-100 flex items-center justify-center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d352.5654517185597!2d36.95194190169421!3d-1.2799900973045621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f135517c38363%3A0xc549413d6b5badab!2sComputers%20For%20Schools%20Kenya%20(CFSK)!5e0!3m2!1sen!2ske!4v1795280821341!5m2!1sen!2ske" class="w-full h-full border-0" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#092627] text-slate-300 mt-auto py-8 text-center text-xs">
+    <p>&copy; 2026 The Medali School. All Rights Reserved.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

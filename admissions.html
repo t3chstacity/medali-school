@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admissions | The Medali School</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="medali-school-logo.jpg" type="image/x-icon" />
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-xl bg-[#0f3d3e] flex items-center justify-center text-amber-400 overflow-hidden">
+            <img src="medali-school-logo.jpg" alt="The Medali School Logo" class="w-full h-full object-cover" />
+          </div>
+          <div>
+            <span class="block text-xl font-extrabold text-[#0f3d3e] leading-none">THE MEDALI SCHOOL</span>
+            <span class="block text-[11px] font-semibold text-amber-600 uppercase tracking-widest mt-1">Aspire and strive to achieve</span>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-700">
+          <a href="index.html" class="nav-link hover:text-amber-600">Home</a>
+          <a href="about.html" class="nav-link hover:text-amber-600">About Us</a>
+          <a href="academics.html" class="nav-link hover:text-amber-600">Academics</a>
+          <a href="gallery.html" class="nav-link hover:text-amber-600">Campus Life</a>
+          <a href="contact.html" class="nav-link hover:text-amber-600">Contact</a>
+          <a href="admissions.html" class="bg-amber-600 hover:bg-amber-700 text-white px-5 py-2.5 rounded-lg font-semibold">Apply Now</a>
+        </nav>
+        <button id="mobile-menu-btn" class="md:hidden text-slate-700"><i class="fa-solid fa-bars text-2xl"></i></button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-4 pt-3 pb-5 space-y-2">
+      <a href="index.html" class="block py-2">Home</a>
+      <a href="about.html" class="block py-2">About Us</a>
+      <a href="academics.html" class="block py-2">Academics</a>
+      <a href="gallery.html" class="block py-2">Campus Life</a>
+      <a href="contact.html" class="block py-2">Contact</a>
+      <a href="admissions.html" class="block mt-2 text-center bg-amber-600 text-white py-2.5 rounded-lg font-semibold">Apply Now</a>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="bg-[#0f3d3e] text-white py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <p class="text-amber-400 text-xs font-bold uppercase tracking-widest mb-2">Join Our Community</p>
+      <h1 class="text-4xl font-bold">Admissions & Enrollment</h1>
+      <p class="text-slate-200 mt-3 max-w-2xl">We welcome applications for Playgroup, Pre-Primary, Primary, and Junior School throughout the academic year.</p>
+    </div>
+  </section>
+
+  <!-- Steps & Application Form -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12">
+      
+      <!-- Left Column: Steps & Requirements -->
+      <div class="lg:col-span-5 space-y-8">
+        <div>
+          <h2 class="text-2xl font-bold text-[#0f3d3e] mb-4">4-Step Admission Process</h2>
+          <div class="space-y-4">
+            <div class="flex gap-4">
+              <div class="w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center shrink-0">1</div>
+              <div>
+                <h4 class="font-bold text-slate-800">Submit Inquiry / Application</h4>
+                <p class="text-xs text-slate-600">Complete the online admission form or pick up an application pack at the school office.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="w-8 h-8 rounded-full bg-[#0f3d3e] text-white font-bold flex items-center justify-center shrink-0">2</div>
+              <div>
+                <h4 class="font-bold text-slate-800">Campus Visit & Learner Assessment</h4>
+                <p class="text-xs text-slate-600">Tour our facilities and complete a friendly grade-placement interview.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="w-8 h-8 rounded-full bg-[#0f3d3e] text-white font-bold flex items-center justify-center shrink-0">3</div>
+              <div>
+                <h4 class="font-bold text-slate-800">Admission Offer & Fee Structure</h4>
+                <p class="text-xs text-slate-600">Receive your official admission letter, uniform list, and termly fee schedule.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center shrink-0">4</div>
+              <div>
+                <h4 class="font-bold text-slate-800">Registration & Orientation</h4>
+                <p class="text-xs text-slate-600">Submit required documents and welcome your child to The Medali School family.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+          <h3 class="font-bold text-[#0f3d3e] mb-3">Required Documents</h3>
+          <ul class="text-sm text-slate-600 space-y-2">
+            <li><i class="fa-solid fa-check text-amber-600 mr-2"></i>Copy of Child's Birth Certificate</li>
+            <li><i class="fa-solid fa-check text-amber-600 mr-2"></i>2 Recent Passport-Size Photographs</li>
+            <li><i class="fa-solid fa-check text-amber-600 mr-2"></i>Previous School Report Card / Transfer Letter</li>
+            <li><i class="fa-solid fa-check text-amber-600 mr-2"></i>NEMIS / Assessment Number (for Grade 1–9 transfers)</li>
+            <li><i class="fa-solid fa-check text-amber-600 mr-2"></i>Copy of Parent/Guardian National ID</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right Column: Online Application Form -->
+      <div class="lg:col-span-7">
+        <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100">
+          <h2 class="text-2xl font-bold text-[#0f3d3e] mb-2">Online Admission Application</h2>
+          <p class="text-sm text-slate-600 mb-6">Fill out the learner's details below and our admissions office will contact you promptly.</p>
+
+          <div id="admission-alert" class="hidden mb-6 bg-emerald-50 border border-emerald-200 text-emerald-800 px-4 py-3 rounded-lg text-sm">
+            <i class="fa-solid fa-circle-check mr-2"></i>Thank you! Your admission inquiry has been received. Our team will reach out shortly.
+          </div>
+
+          <div id="admission-error" class="hidden mb-6 bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg text-sm">
+            <i class="fa-solid fa-circle-exclamation mr-2"></i>Oops! Something went wrong while submitting the form. Please try again or call us directly.
+          </div>
+
+          <form id="admission-form" method="POST" action="https://formspree.io/f/xyewngkn" class="space-y-5">
+            <input type="hidden" name="_subject" value="New Admission Application - The Medali School" />
+            <input type="text" name="_gotcha" class="hidden" />
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5">Learner's Full Name *</label>
+                <input type="text" name="learner_name" required placeholder="e.g. Jane Doe" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#0f3d3e]" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5">Date of Birth *</label>
+                <input type="date" name="date_of_birth" required class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#0f3d3e]" />
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5">Grade Applying For *</label>
+                <select name="grade_applying_for" required class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#0f3d3e]">
+                  <option value="">Select Level...</option>
+                  <option value="Playgroup">Playgroup</option>
+                  <option value="PP1">PP1</option>
+                  <option value="PP2">PP2</option>
+                  <option value="Grade 1 - Grade 3">Grade 1 – Grade 3</option>
+                  <option value="Grade 4 - Grade 6">Grade 4 – Grade 6</option>
+                  <option value="Junior School (Grade 7 - 9)">Junior School (Grade 7 – 9)</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5">Preferred Entry Term *</label>
+                <select name="preferred_term" required class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#0f3d3e]">
+                  <option value="Term 1">Term 1</option>
+                  <option value="Term 2">Term 2</option>
+                  <option value="Term 3">Term 3</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5">Parent / Guardian Name *</label>
+                <input type="text" name="parent_name" required placeholder="Full Name" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#0f3d3e]" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5">Phone Number (WhatsApp/Call) *</label>
+                <input type="tel" name="phone_number" required placeholder="+254 7XX XXX XXX" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#0f3d3e]" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5">Email Address</label>
+              <input type="email" name="email" placeholder="parent@example.com" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#0f3d3e]" />
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5">Additional Notes / Transport Needs</label>
+              <textarea name="additional_notes" rows="3" placeholder="Mention current school, transport route, or any questions..." class="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#0f3d3e]"></textarea>
+            </div>
+
+            <button type="submit" id="admission-submit-btn" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 rounded-lg transition shadow">
+              Submit Admission Inquiry
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#092627] text-slate-300 mt-auto py-8 text-center text-xs">
+    <p>&copy; 2026 The Medali School. All Rights Reserved.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

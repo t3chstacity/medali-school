@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | The Medali School</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="medali-school-logo.jpg" type="image/x-icon" />
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-xl bg-[#0f3d3e] flex items-center justify-center text-amber-400">
+            <img src="medali-school-logo.jpg" alt="The Medali School Logo" srcset="">
+          </div>
+          <div>
+            <span class="block text-xl font-extrabold text-[#0f3d3e] leading-none">THE MEDALI SCHOOL</span>
+            <span class="block text-[11px] font-semibold text-amber-600 uppercase tracking-widest mt-1">Aspire and strive to achieve</span>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-700">
+          <a href="index.html" class="nav-link hover:text-amber-600">Home</a>
+          <a href="about.html" class="nav-link hover:text-amber-600">About Us</a>
+          <a href="academics.html" class="nav-link hover:text-amber-600">Academics</a>
+          <a href="gallery.html" class="nav-link hover:text-amber-600">Campus Life</a>
+          <a href="contact.html" class="nav-link hover:text-amber-600">Contact</a>
+          <a href="admissions.html" class="bg-amber-600 hover:bg-amber-700 text-white px-5 py-2.5 rounded-lg font-semibold">Apply Now</a>
+        </nav>
+        <button id="mobile-menu-btn" class="md:hidden text-slate-700"><i class="fa-solid fa-bars text-2xl"></i></button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-4 pt-3 pb-5 space-y-2">
+      <a href="index.html" class="block py-2">Home</a>
+      <a href="about.html" class="block py-2 font-bold text-amber-600">About Us</a>
+      <a href="academics.html" class="block py-2">Academics</a>
+      <a href="gallery.html" class="block py-2">Campus Life</a>
+      <a href="contact.html" class="block py-2">Contact</a>
+      <a href="admissions.html" class="block mt-2 text-center bg-amber-600 text-white py-2.5 rounded-lg font-semibold">Apply Now</a>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="bg-[#0f3d3e] text-white py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <p class="text-amber-400 text-xs font-bold uppercase tracking-widest mb-2">Who We Are</p>
+      <h1 class="text-4xl font-bold">About The Medali School</h1>
+      <p class="text-slate-200 mt-3 max-w-2xl">Dedicated to nurturing excellence, integrity, and lifelong curiosity in every learner.</p>
+    </div>
+  </section>
+
+  <!-- School Story -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-3xl font-bold text-[#0f3d3e] mb-4">Our Heritage & Educational Philosophy</h2>
+        <p class="text-slate-600 leading-relaxed mb-4">
+          The Medali School was established to provide a supportive, disciplined, and stimulating learning environment where children are empowered to achieve their fullest academic and personal potential.
+        </p>
+        <p class="text-slate-600 leading-relaxed mb-4">
+          We believe education goes beyond textbooks. Alongside strong classroom instruction, our learners participate in confidence-building initiatives, talent showcases, leadership clubs, and community values programs.
+        </p>
+        <p class="text-slate-600 leading-relaxed">
+          [Edit: Add founding year, founder/director history, and specific community milestones from your school profile.]
+        </p>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 text-center">
+          <span class="block text-3xl font-extrabold text-amber-600">100%</span>
+          <span class="text-xs font-semibold text-slate-600 uppercase mt-1 block">Learner-Centered Focus</span>
+        </div>
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 text-center">
+          <span class="block text-3xl font-extrabold text-[#0f3d3e]">CBC</span>
+          <span class="text-xs font-semibold text-slate-600 uppercase mt-1 block">Fully Compliant Curriculum</span>
+        </div>
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 text-center">
+          <span class="block text-3xl font-extrabold text-[#0f3d3e]">Small</span>
+          <span class="text-xs font-semibold text-slate-600 uppercase mt-1 block">Supportive Class Sizes</span>
+        </div>
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 text-center">
+          <span class="block text-3xl font-extrabold text-amber-600">Holistic</span>
+          <span class="text-xs font-semibold text-slate-600 uppercase mt-1 block">Talent & Character Growth</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission, Vision, Values -->
+  <section class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+        <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-4">
+          <i class="fa-solid fa-bullseye"></i>
+        </div>
+        <h3 class="text-xl font-bold text-[#0f3d3e] mb-3">Our Mission</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          To provide quality, holistic education that nurtures academic excellence, strong moral values, creativity, and self-confidence in every learner.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+        <div class="w-12 h-12 rounded-xl bg-teal-100 text-[#0f3d3e] flex items-center justify-center text-xl mb-4">
+          <i class="fa-solid fa-eye"></i>
+        </div>
+        <h3 class="text-xl font-bold text-[#0f3d3e] mb-3">Our Vision</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          To be a premier center of educational excellence that shapes disciplined, innovative, and compassionate future leaders.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+        <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-4">
+          <i class="fa-solid fa-gem"></i>
+        </div>
+        <h3 class="text-xl font-bold text-[#0f3d3e] mb-3">Core Values</h3>
+        <ul class="text-slate-600 text-sm space-y-1.5">
+          <li><strong>Excellence:</strong> Striving for our best in all tasks</li>
+          <li><strong>Integrity:</strong> Honesty and accountability</li>
+          <li><strong>Respect:</strong> Valuing self, peers, and community</li>
+          <li><strong>Confidence:</strong> Courage to lead and express ideas</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Head Teacher's Message -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-[#0f3d3e] text-white rounded-3xl p-8 md:p-12 shadow-lg">
+      <span class="text-amber-400 text-xs font-bold uppercase tracking-widest">Leadership Message</span>
+      <h2 class="text-2xl sm:text-3xl font-bold mt-2 mb-4">From the Head Teacher's Desk</h2>
+      <p class="text-slate-200 leading-relaxed mb-6 italic">
+        "Welcome to The Medali School. Every child enters our gates with unique gifts waiting to be discovered. Our dedicated staff works hand-in-hand with parents to ensure every student grows in knowledge, discipline, and confidence."
+      </p>
+     
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#092627] text-slate-300 mt-auto py-8 text-center text-xs">
+    <p>&copy; 2026 The Medali School. All Rights Reserved. | <a href="https://www.facebook.com/p/The-Medali-School-100089472521052/" target="_blank" rel="noopener" class="text-amber-400 hover:underline">Official Facebook Page</a></p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Life & Gallery | The Medali School</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="medali-school-logo.jpg" type="image/x-icon" />
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-xl bg-[#0f3d3e] flex items-center justify-center text-amber-400">
+            <img src="medali-school-logo.jpg" alt="The Medali School Logo" srcset="">
+          </div>
+          <div>
+            <span class="block text-xl font-extrabold text-[#0f3d3e] leading-none">THE MEDALI SCHOOL</span>
+            <span class="block text-[11px] font-semibold text-amber-600 uppercase tracking-widest mt-1">Aspire and strive to achieve</span>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-700">
+          <a href="index.html" class="nav-link hover:text-amber-600">Home</a>
+          <a href="about.html" class="nav-link hover:text-amber-600">About Us</a>
+          <a href="academics.html" class="nav-link hover:text-amber-600">Academics</a>
+          <a href="gallery.html" class="nav-link hover:text-amber-600">Campus Life</a>
+          <a href="contact.html" class="nav-link hover:text-amber-600">Contact</a>
+          <a href="admissions.html" class="bg-amber-600 hover:bg-amber-700 text-white px-5 py-2.5 rounded-lg font-semibold">Apply Now</a>
+        </nav>
+        <button id="mobile-menu-btn" class="md:hidden text-slate-700"><i class="fa-solid fa-bars text-2xl"></i></button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-4 pt-3 pb-5 space-y-2">
+      <a href="index.html" class="block py-2">Home</a>
+      <a href="about.html" class="block py-2">About Us</a>
+      <a href="academics.html" class="block py-2">Academics</a>
+      <a href="gallery.html" class="block py-2 font-bold text-amber-600">Campus Life</a>
+      <a href="contact.html" class="block py-2">Contact</a>
+      <a href="admissions.html" class="block mt-2 text-center bg-amber-600 text-white py-2.5 rounded-lg font-semibold">Apply Now</a>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="bg-[#0f3d3e] text-white py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <p class="text-amber-400 text-xs font-bold uppercase tracking-widest mb-2">Life at Medali</p>
+      <h1 class="text-4xl font-bold">Campus Life & Events Gallery</h1>
+      <p class="text-slate-200 mt-3 max-w-2xl">Moments of learning, creativity, leadership showcases, and celebrations at The Medali School.</p>
+    </div>
+  </section>
+
+  <!-- Filter & Gallery Grid -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Category Filters -->
+      <div class="flex flex-wrap justify-center gap-3 mb-10">
+        <button data-filter="all" class="filter-btn bg-[#0f3d3e] text-white px-5 py-2 rounded-full text-sm font-semibold transition">All Moments</button>
+        <button data-filter="academics" class="filter-btn bg-slate-100 text-slate-700 px-5 py-2 rounded-full text-sm font-semibold transition">Classroom & STEM</button>
+        <button data-filter="events" class="filter-btn bg-slate-100 text-slate-700 px-5 py-2 rounded-full text-sm font-semibold transition">Talent & Events</button>
+        <button data-filter="sports" class="filter-btn bg-slate-100 text-slate-700 px-5 py-2 rounded-full text-sm font-semibold transition">Sports & Clubs</button>
+      </div>
+
+      <!-- Gallery Grid (Replace image URLs with official photos from Facebook) -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="gallery-item group relative rounded-2xl overflow-hidden shadow-sm" data-category="academics">
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80" alt="Interactive Classroom" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300" />
+          <div class="p-4 bg-white border border-t-0 border-slate-100">
+            <span class="text-xs font-bold text-amber-600 uppercase">Classroom Learning</span>
+            <h3 class="font-bold text-[#0f3d3e]">Interactive CBC Lessons</h3>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-2xl overflow-hidden shadow-sm" data-category="events">
+          <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=800&q=80" alt="Talent Showcase" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300" />
+          <div class="p-4 bg-white border border-t-0 border-slate-100">
+            <span class="text-xs font-bold text-amber-600 uppercase">Talent & Confidence</span>
+            <h3 class="font-bold text-[#0f3d3e]">Student Talent & Leadership Showcase</h3>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-2xl overflow-hidden shadow-sm" data-category="sports">
+          <img src="https://images.unsplash.com/photo-1526676037777-05a232554f77?auto=format&fit=crop&w=800&q=80" alt="Sports Day" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300" />
+          <div class="p-4 bg-white border border-t-0 border-slate-100">
+            <span class="text-xs font-bold text-amber-600 uppercase">Sports & Fitness</span>
+            <h3 class="font-bold text-[#0f3d3e]">Annual Inter-House Sports Day</h3>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-2xl overflow-hidden shadow-sm" data-category="academics">
+          <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=800&q=80" alt="Science Practical" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300" />
+          <div class="p-4 bg-white border border-t-0 border-slate-100">
+            <span class="text-xs font-bold text-amber-600 uppercase">Practical Discovery</span>
+            <h3 class="font-bold text-[#0f3d3e]">Hands-On Science & Technology</h3>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-2xl overflow-hidden shadow-sm" data-category="events">
+          <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" alt="Graduation & Prize Giving" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300" />
+          <div class="p-4 bg-white border border-t-0 border-slate-100">
+            <span class="text-xs font-bold text-amber-600 uppercase">Celebrations</span>
+            <h3 class="font-bold text-[#0f3d3e]">PP2 Graduation & Prize Giving</h3>
+          </div>
+        </div>
+
+        <div class="gallery-item group relative rounded-2xl overflow-hidden shadow-sm" data-category="sports">
+          <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80" alt="School Clubs" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300" />
+          <div class="p-4 bg-white border border-t-0 border-slate-100">
+            <span class="text-xs font-bold text-amber-600 uppercase">Clubs & Mentorship</span>
+            <h3 class="font-bold text-[#0f3d3e]">Creative Arts & Environmental Club</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Facebook Updates Prompt -->
+      <div class="mt-14 bg-slate-50 border border-slate-200 rounded-2xl p-8 text-center">
+        <h3 class="text-xl font-bold text-[#0f3d3e] mb-2">See Our Latest Termly Updates & Event Photos</h3>
+        <p class="text-sm text-slate-600 mb-5">Follow our official Facebook community for weekly announcements, student achievements, and event highlights.</p>
+        <a href="https://www.facebook.com/p/The-Medali-School-100089472521052/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#1877F2] hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition">
+          <i class="fa-brands fa-facebook"></i> Visit The Medali School on Facebook
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#092627] text-slate-300 mt-auto py-8 text-center text-xs">
+    <p>&copy; 2026 The Medali School. All Rights Reserved.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
